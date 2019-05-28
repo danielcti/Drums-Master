@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Buttons from './components/Buttons';
 // import Player from './components/Player'
+import VolumeChanger from './components/VolumeChanger'
 import './App.css';
 import soundF from './functions/sound';
 
@@ -54,6 +55,7 @@ class App extends Component {
         <h1>The drums game!</h1>
          <Buttons sound={this.sound} handleSound={this.handleSound}/>
          {/* <Player sequence={this.state.sequence}/> */}
+         <VolumeChanger />
       </div>
     );
   }

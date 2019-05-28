@@ -4,7 +4,7 @@ const soundF = (som) => {
     for(let i=1;i<=9;i++){
       sounds[i] = document.getElementById(`sound${i}`)
       sounds[i].onended = () => {
-        console.log(`${sounds[i].id} ended`)
+        // console.log(`${sounds[i].id} ended`)
       }
     }
     switch(som){
